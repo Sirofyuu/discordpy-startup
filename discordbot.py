@@ -38,8 +38,8 @@ class ScheduleTime:
 
 token = 'NTkwMTY0MDAyMjA2Nzc3MzQ0.XQey6Q.zrFNAJseof4ta6fKBwMAnJeoztA'                        # DiscordBotのトークン
 client = discord.Client()         # ディスコードの接続に使用するオブジェクト
-DebugId = ''                      # コマンドなどを入力するチャンネル
-DefaultId = ''                    # 呟くチャンネル
+DebugId = 'general'                      # コマンドなどを入力するチャンネル
+DefaultId = 'general'                    # 呟くチャンネル
 StartTime = ScheduleTime(0,10,0)  # 集計開始
 EndTime = ScheduleTime(2,23,59)   # 集計おわり
 week = ['月','火','水','木','金','土','日']
