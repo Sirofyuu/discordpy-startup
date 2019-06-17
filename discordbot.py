@@ -1,20 +1,3 @@
-from discord.ext import commands
-import os
-import traceback
-
-bot = commands.Bot(command_prefix='/')
-token = os.environ['DISCORD_BOT_TOKEN']
-
-
-@bot.event
-async def on_command_error(ctx, error):
-    await ctx.send(str(error))
-
-
-@bot.command()
-async def ping(ctx):
-    await ctx.send('pong')
-    
 import discord
 import asyncio
 from datetime import datetime
@@ -190,6 +173,3 @@ except:
   loop.run_until_complete(client.logout())
 finally:
   loop.close()
-
-
-bot.run(token)
