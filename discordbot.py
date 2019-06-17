@@ -53,10 +53,10 @@ class ScheduleTime:
     return True
 
 
-token = ''                        # DiscordBotのトークン
+token = 'NTkwMTY0MDAyMjA2Nzc3MzQ0.XQePiw.bennL0psSF-3l0J1NbqOXMRDXv0'                        # DiscordBotのトークン
 client = discord.Client()         # ディスコードの接続に使用するオブジェクト
-DebugId = ''                      # コマンドなどを入力するチャンネル
-DefaultId = ''                    # 呟くチャンネル
+DebugId = 'general'                      # コマンドなどを入力するチャンネル
+DefaultId = 'general'                    # 呟くチャンネル
 StartTime = ScheduleTime(0,10,0)  # 集計開始
 EndTime = ScheduleTime(2,23,59)   # 集計おわり
 week = ['月','火','水','木','金','土','日']
